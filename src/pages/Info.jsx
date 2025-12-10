@@ -25,25 +25,25 @@ const Info = () => {
     >
       <Card sx={{ maxWidth: 400, width: "100%", p: 2, boxShadow: 6 }}>
         <CardHeader
-          avatar={<Avatar src={dataById.avatar} alt={dataById.name} sx={{ width: 56, height: 56 }} />}
+          avatar={<Avatar src={dataById?.avatar} alt={dataById?.name} sx={{ width: 56, height: 56 }} />}
           title={
             <Typography variant="h5" component="div">
-              {dataById.name}
+              {dataById?.name}
             </Typography>
           }
           subheader={
             <Typography
               variant="body2"
-              sx={{ color: dataById.status ? "green" : "red" }}
+              sx={{ color: dataById?.status ? "green" : "red" }}
             >
-              {dataById.status ? "Active" : "Inactive"}
+              {dataById?.status ? "Active" : "Inactive"}
             </Typography>
           }
         />
 
         <CardContent>
           <Typography variant="body1" sx={{ mb: 2 }}>
-            {dataById.description}
+            {dataById?.description}
           </Typography>
 
           <Stack direction="row" spacing={2} justifyContent="center">
@@ -66,25 +66,25 @@ const Info = () => {
     >
       <Card sx={{ maxWidth: 400, width: "100%", p: 2, boxShadow: 6 }}>
         <CardHeader
-          avatar={<Avatar src={dataById.avatar} alt={dataById.name} sx={{ width: 56, height: 56 }} />}
+          avatar={<Avatar src={dataById?.avatar} alt={dataById?.name} sx={{ width: 56, height: 56 }} />}
           title={
             <Typography variant="h5" component="div">
-              {dataById.name}
+              {dataById?.name}
             </Typography>
           }
           subheader={
             <Typography
               variant="body2"
-              sx={{ color: dataById.status ? "green" : "red" }}
+              sx={{ color: dataById?.status ? "green" : "red" }}
             >
-              {dataById.status ? "Active" : "Inactive"}
+              {dataById?.status ? "Active" : "Inactive"}
             </Typography>
           }
         />
 
         <CardContent>
           <Typography variant="body1" sx={{ mb: 2 }}>
-            {dataById.description}
+            {dataById?.description}
           </Typography>
 
           <Stack direction="row" spacing={2} justifyContent="center">
