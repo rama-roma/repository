@@ -39,9 +39,5 @@ export const useTodo = create((set) => ({
     editUser: (id, name, status) => set((state) => ({
         data: state.data.map((user) => user.id === id ?  {...user, name, status} : user)
     })),
-    checkedbox: (id) => set((state) => ({
-        data: state.data.map((user) => 
-            user.id === id ? { ...user, status: !user.status } : user
-        )
-    }))
+    
 }))

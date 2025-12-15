@@ -27,7 +27,7 @@ const Async = () => {
     setEditId(null);
     setEditName("");
     setEditDesc("");
-    setEditStatus(false);
+    setEditStatus(false); 
   }
 
   function handleAdd() {
